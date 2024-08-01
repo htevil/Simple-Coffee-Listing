@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #111315;
+  height: 160vh;
+}
+
+.bgImg {
+  width: 100%;
+  height: 300px;
+}
+
+.container{
+  margin: 0px 25px 0px 25px;
+  padding: 20px 124px 80px 124px;
+  background-color: #1B1D1F;
+  border-radius: 10px;
+  position: absolute;
+  top: 160px;
+  height: fit-content;
+}
+
+.container1{
+  width: 100%;
+  max-width: 500px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22257%22%20height%3D%22153%22%20viewBox%3D%220%200%20257%20153%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2%2071.8885C3.45531%2057.3142%2023.696%2041.7169%2033.6244%2033.2805C66.0308%205.74397%20114.381%20-4.23546%20155.905%205.8326C246.941%2027.9052%20154.103%20161.746%2080.308%20136.587C52.5484%20127.123%2076.0283%2089.2122%2086.9341%2076.2621C113.937%2044.1978%20164.916%2027.0297%20204.998%2044.5915C239.889%2059.8782%20266.993%20108.858%20249.574%20146.239C247.754%20150.145%20240.823%20152.29%20236.924%20150.16C231.733%20147.325%20239.159%20139.456%20240.538%20137.04%22%20stroke%3D%22%23302522%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: 100% 5%;
+  padding-top: 60px;
+}
+
+h1{
+  width: 100%;
+  text-align: center;
+  color: #FEF7EE;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  z-index: 2;
+}
+
+p{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6F757C;
+  margin: 0 0 20px 0;
+  z-index: 2;
+}
+
+svg{
+  position: absolute;
+  top: 22px;
+  right: 295px;
+  width: 100%;
+  z-index: 1;
+}
+
+.button{
+  margin-bottom: 40px;
+}
+
+button{
+  padding: 8px 12px 8px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FEF7EE;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#btn2{
+  margin-left: 8px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 64px;
+}
+
+.card{
+  width: 260px;
+  height: fit-content;
+  font-size: 14px;
+  color: #FEF7EE;
+  font-weight: 700;
+}
+
+.poster{
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
+.poster span{
+  margin: 0px;
+  padding: 3px 8px 3px 8px;
+  background-color: #F6C768;
+  border-radius: 20px;
+  color: #111315;
+  font-size: 10px;
+}
+
+.price{
+  padding: 3px 5px 3px 5px; 
+  font-size: 12px;
+  color: #111315;
+  background-color: #BEE3CC;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 780px) and (max-width:1162px) {
+  .container{
+    padding: 20px 80px 80px 80px;
+  }
+  
+}
+
+@media screen and (min-width: 650px) and (max-width:1055px) {
+  body{
+    height: 200vh;
+  }
+  .container2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 572px) and (max-width:782px) {
+  body{
+    height: 320vh;
+  }
+
+  .container{
+    padding: 20px 40px 40px 40px;
+  }
+  
+}
+
+
+@media screen and (max-width: 700px) {
+
+  body{
+    height: 280vh;
+  }
+
+  .container1{
+    max-width: 400px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 20px;
+  }
+}
+
+@media screen and (max-width:572px) {
+
+  .container{
+    padding: 20px 25px 20px 25px;
+  }
+
+  h1{
+    font-size: 22px;
+    max-width: 370px;
+  }
+
+  p, button{
+    max-width: 370px;
+    font-size: 12px;
+  }
+
+  .card{
+    width: 220px;
+  }
+  
+}
+
+@media screen and (max-width:572px) {
+
+  .container{
+    padding: 20px 20px 20px 20px;
+  }
+
+  h1{
+    font-size: 22px;
+    max-width: 370px;
+  }
+
+  p, button{
+    max-width: 370px;
+    font-size: 12px;
+  }
+  
+}
+
+@media screen and (max-width:500px) {
+
+  .container1{
+    width: 250px; 
+  }
+
+  .card{
+    width: 220px;
+  }
+  
+}
